@@ -10,7 +10,8 @@ export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
   // the only thing that will be stored in recipes is a Recipe object that will ALWAYS be an array.
   recipes: Recipe[] = [
-    new Recipe('a test recipe', 'this is a test', 'http://hips.hearstapps.com/del.h-cdn.co/assets/16/21/1464124800-delish-grilled-chicken-sweet-chili.jpg')
+    new Recipe('a test recipe', 'this is a test', 'http://hips.hearstapps.com/del.h-cdn.co/assets/16/21/1464124800-delish-grilled-chicken-sweet-chili.jpg'),
+    new Recipe('another test recipe', 'this is a test', 'http://hips.hearstapps.com/del.h-cdn.co/assets/16/21/1464124800-delish-grilled-chicken-sweet-chili.jpg')
   ]
 
   constructor() { }
